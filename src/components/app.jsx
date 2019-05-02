@@ -8,8 +8,8 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      flats: flats,
-      selectedFlat: {  },
+      flatList: flats,
+      selectedFlat: { },
       center: {
         lat: 48.853372,
         lng: 2.349175
@@ -27,7 +27,7 @@ class App extends Component {
   render() {
     return (
       <div className="container">
-        <FlatList flatList={this.state.flats} selectFlat={this.selectFlat} />
+        <FlatList flatList={this.state.flatList} selectFlat={this.selectFlat} />
         <div className="map-container">
           <GoogleMapReact
             defaultCenter={this.state.center}

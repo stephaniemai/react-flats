@@ -1,11 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Marker extends Component {
-  render() {
-    return (
-      <div className="marker"></div>
-    );
-  }
-}
+const Marker = () => {
+  return <div className="marker" />;
+};
 
 export default Marker;
