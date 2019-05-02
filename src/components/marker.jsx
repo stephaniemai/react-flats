@@ -3,9 +3,7 @@ import React, { Component } from 'react';
 class Marker extends Component {
   render() {
     return (
-      <div>
-
-      </div>
+      <div className="marker"></div>
     );
   }
 }
