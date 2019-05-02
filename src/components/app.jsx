@@ -13,7 +13,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <div className="flat-list">
+        <div >
           <FlatList flatList={this.state.flats} />
         </div>
         <div className="map-container">
