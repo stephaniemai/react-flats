@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
 
 class Flat extends Component {
-  // constructor(props) {
-  //   super(props);
-  // }
+  constructor(props) {
+    super(props);
+  }
+
+  handleClick = () => {
+    // console.log(this.props.lat, this.props.lng);
+    this.props.selectFlat(this.props);
+  };
 
   render() {
     const bckImg = {
@@ -11,10 +16,10 @@ class Flat extends Component {
     };
 
     return (
-      <div className="card" style={bckImg}>
+      <div className="card" style={bckImg} onClick={this.handleClick}>
         <div className="card-category"> {this.props.price} {this.props.priceCurrency}</div>
         <div className="card-description">
-          <h2>{this.props.name}{console.log(this.props)}</h2>
+          <h2>{this.props.name}</h2>
         </div>
         <a className="card-link" href="#" />
       </div>
